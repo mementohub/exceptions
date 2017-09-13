@@ -1,0 +1,36 @@
+{
+    "name": "imemento/exceptions",
+    "description": "HTTP Exceptions",
+    "homepage": "https://gitlab.com/imemento/composer/packages/exceptions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Stan",
+            "email": "contact@georgestan.com",
+            "homepage": "http://imemento.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.1",
+        "symfony/http-kernel": "~3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^5.7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "iMemento\\Exceptions\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "iMemento\\Exceptions\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
