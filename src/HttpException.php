@@ -6,6 +6,19 @@ use Symfony\Component\HttpKernel\Exception\HttpException as SymfonyHttpException
 
 class HttpException extends SymfonyHttpException
 {
-    //TODO: add our custom methods here
-    //TODO: methods for debug level: user / developer
+
+    private $id;
+
+    public function __construct($statusCode, $message = null, \Exception $previous = null, array $headers = array(), $code = 0)
+    {
+        $this->id = uniqid();
+
+        parent::__construct($statusCode, $message, $previous, $headers, $code);
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
 }
