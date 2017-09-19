@@ -2,14 +2,14 @@
 
 namespace iMemento\Exceptions;
 
-use Symfony\Component\HttpKernel\Exception\HttpException as SymfonyHttpException;
+use Exception as BaseException;
 
 /**
  * Class HttpException
  *
  * @package iMemento\Exceptions
  */
-class HttpException extends SymfonyHttpException
+class Exception extends BaseException
 {
 
     /**
@@ -25,19 +25,17 @@ class HttpException extends SymfonyHttpException
     /**
      * HttpException constructor.
      *
-     * @param string          $statusCode
      * @param null            $message
      * @param null            $debug
      * @param int             $code
      * @param \Exception|null $previous
-     * @param array           $headers
      */
-    public function __construct($statusCode, $message = null, $debug = null, $code = 0, \Exception $previous = null, array $headers = array())
+    public function __construct($message = null, $debug = null, $code = 1000, \Exception $previous = null)
     {
         $this->id = uniqid();
         $this->debug = $debug;
 
-        parent::__construct($statusCode, $message, $previous, $headers, $code);
+        parent::__construct($message, $code, $previous);
     }
 
     /**
