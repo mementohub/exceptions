@@ -1,11 +1,16 @@
 # iMemento HTTP Exceptions
-
 This package provides some common exceptions to be used in all iMemento Services.
 
 ## Install
 ```bash
 composer require imemento/exceptions
 ```
+
+## Usage
+```php
+throw new ResourceException($message, $debug, $code, $previous, $headers);
+```
+All our exceptions that extend the HttpException class have a unique id, optional debug info and an error code. They will be mapped to a specific response from [http-responses](https://gitlab.com/imemento/composer/packages/http-responses) using our custom [error handler](https://gitlab.com/imemento/composer/packages/exceptions-laravel).
 
 ## Errors
 

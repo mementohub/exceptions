@@ -6,7 +6,6 @@ use Exception;
 
 class ResourceException extends HttpException
 {
-
     /**
      * Create a new resource exception instance.
      *
