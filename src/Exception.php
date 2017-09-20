@@ -3,6 +3,7 @@
 namespace iMemento\Exceptions;
 
 use Exception as BaseException;
+use Ramsey\Uuid\Uuid;
 
 /**
  * Class HttpException
@@ -32,7 +33,7 @@ class Exception extends BaseException
      */
     public function __construct($message = null, $debug = null, $code = 1000, \Exception $previous = null)
     {
-        $this->id = uniqid();
+        $this->id = Uuid::uuid4()->toString();
         $this->debug = $debug;
 
         parent::__construct($message, $code, $previous);
