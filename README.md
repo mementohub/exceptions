@@ -23,6 +23,7 @@ All our exceptions that extend the HttpException class have a unique id, optiona
 | iMemento\Exceptions\ExpiredConsumerTokenException                         |  1004 |
 | iMemento\Exceptions\MissingTokenException                                 |  1005 |
 | iMemento\Exceptions\MissingRoleException                                  |  1010 |
+| iMemento\Exceptions\MissingSessionException                               |  1020 |
 | iMemento\Exceptions\ResourceException                                     |  1100 |
 | iMemento\Exceptions\UpdateResourceFailedException                         |  1100 |
 | iMemento\Exceptions\DeleteResourceFailedException                         |  1100 |
