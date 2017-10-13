@@ -5,7 +5,6 @@ namespace iMemento\Exceptions;
 class MissingRoleException extends Exception
 {
     /**
-     * Create a new resource exception instance.
      *
      * @param string     $message
      * @param null       $debug
