@@ -24,7 +24,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "iMemento\\Exceptions\\Test\\": "tests"
+            "iMemento\\Exceptions\\Tests\\": "tests"
         }
     },
     "scripts": {

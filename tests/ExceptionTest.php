@@ -1,8 +1,10 @@
 <?php
 
-namespace iMemento\Exceptions;
+namespace iMemento\Exceptions\Tests;
 
 use PHPUnit\Framework\TestCase;
+use iMemento\Exceptions\Exception;
+use iMemento\Exceptions\ResourceException;
 
 /**
  * @covers Client
