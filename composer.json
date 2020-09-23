@@ -12,10 +12,10 @@
     ],
     "require": {
         "php": "^7.1",
-        "ramsey/uuid": "^3.5"
+        "ramsey/uuid": "^3.5|^4.0"
     },
     "require-dev": {
-        "phpunit/phpunit" : "^7.0"
+        "phpunit/phpunit" : "^7.0|^8.0|^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -33,10 +33,6 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/imemento/"},
-        {"packagist.org": false}
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
