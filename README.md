@@ -1,8 +1,8 @@
 # iMemento HTTP Exceptions
-[![Build Status](https://travis-ci.org/mementohub/exceptions.svg?branch=master)](https://travis-ci.org/mementohub/exceptions)
-[![Latest Stable Version](https://poser.pugx.org/imemento/exceptions/v/stable)](https://packagist.org/packages/imemento/exceptions)
-[![License](https://poser.pugx.org/imemento/exceptions/license)](https://packagist.org/packages/imemento/exceptions)
-[![Total Downloads](https://poser.pugx.org/imemento/exceptions/downloads)](https://packagist.org/packages/imemento/exceptions)
+[![Build Status](https://github.com/mementohub/exceptions/workflows/Testing/badge.svg)](https://github.com/mementohub/exceptions/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/imemento/exceptions)](https://packagist.org/packages/imemento/exceptions)
+[![License](https://img.shields.io/packagist/l/imemento/exceptions)](https://packagist.org/packages/imemento/exceptions)
+[![Total Downloads](https://img.shields.io/packagist/dt/imemento/exceptions)](https://packagist.org/packages/imemento/exceptions)
 
 This package provides some common exceptions to be used in all iMemento Services.
 
