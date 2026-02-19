@@ -2,17 +2,13 @@
 
 namespace iMemento\Exceptions\Tests;
 
-use PHPUnit\Framework\TestCase;
 use iMemento\Exceptions\Exception;
 use iMemento\Exceptions\ResourceException;
+use PHPUnit\Framework\TestCase;
 
-/**
- * @covers Client
- */
 class ExceptionTest extends TestCase
 {
-
-    public function test_exception_is_thrown() 
+    public function test_exception_is_thrown()
     {
         $this->expectException(ResourceException::class);
 
@@ -36,5 +32,4 @@ class ExceptionTest extends TestCase
             $this->assertNotNull($e->getDebug());
         }
     }
-    
 }
